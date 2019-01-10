@@ -1,0 +1,57 @@
+.video{
+position :fixed;
+top:50%;left:50%;
+min-height:100%;
+min-width:100%;
+transform:translate(-50%,-50%);
+z-index:-1;
+}
+p{
+	
+	color:black;
+	font-family:ariel,san-serif;
+}
+h4{
+	
+	
+	color:black;
+	font-family:ariel,san-serif;
+}
+h1{
+	
+	color:black;
+	font-family:ariel,san-serif;
+	background:rgba(255, 152, 0, 0.50);
+	
+	
+}
+label{
+	
+	color:black;
+	font-family:ariel,san-serif;
+	
+	
+}
+img{
+	
+	opacity:0.9;
+	
+}
+textarea{
+	opacity:0.7;
+	font-family:ariel,san-serif;
+	
+}
+h3{
+	
+	color=""
+}
+
+div{
+	background-color:rgba(255, 152, 0, 0.50);
+	height:190%;
+	width:50%;
+	font-family:ariel,san-serif;
+	
+
+}
