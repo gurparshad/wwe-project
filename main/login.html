@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+body
+{
+  background-image: url("seth-rollins-2015-wallpaper-1920x1080.jpg") ;
+}
+h1
+{
+  color: white;
+}
+</style>
+</head>
+<body>
+  <ul>
+  <li><a class="active" href="file:///E:/PANKAJ%20Docs/html%20project/web.html">HOME</a></li>
+  <li><a href="#news">NEWS</a></li>
+  <li><a href="#shop">EVENTS</a></li>
+  <li><a href="#contact">HISTORY</a></li>
+  <li><a href="file:///E:/PANKAJ%20Docs/html%20project/super.html">SUPERSTARS</a></li>
+
+  <li><a href="file:///E:/PANKAJ%20Docs/html%20project/login.html" >  LOG IN </a></li>
+  </ul>
+
+
+<form style="margin:100px">
+<h1 > LOGIN </h1>
+<input type="text" id="username" placeholder="Username"></br></br>
+<input type="password" id="pw" placeholder="Password"></br></br>
+<input type="submit" value="Log In" onclick="clicked()"> </br>
+</form>
+
+
+<script>
+
+
+function clicked()
+{
+  var user = document.getElementById('username');
+  var pass = document.getElementById('pw');
+  var coruser = "test";
+  var corpass = "123";
+
+  if (user.value == coruser) // when ever we use forms we have to use .value with the variable
+  {
+    if(pass.value == corpass)
+    {
+      window.alert("you are logged in successfuly");
+      window.open("file:///C:/Users/GURPARSHAD/Desktop/html%20project/web.html");
+    }
+    else {
+      window.alert("Incorrect username or password!");
+    }
+  }
+  else {
+    window.alert("Incorrect username or password!");
+  }
+}
+</script>
+</body>

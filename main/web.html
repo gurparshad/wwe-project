@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+var imagecount = 1;
+var total = 4;
+
+function slide(x)
+{
+var image = document.getElementById('img');
+imagecount = imagecount + x;
+if(imagecount > 4) {  imagecount = 1; }
+if(imagecount<1) {  imagecount = 4; }
+image.src =  "pic" + imagecount +".jpg";
+}
+window.setInterval(function slideA()    // this function is for auto matic image change
+{
+var image = document.getElementById('img');
+imagecount = imagecount + 1;
+if(imagecount > 4) {  imagecount = 1; }
+if(imagecount<1) {  imagecount = 4; }
+image.src =  "pic" + imagecount +".jpg";
+},5000);
+
+</script>
+
+</head>
+<body onload="slideA()">
+<img src="wwe_network_logo.jpg" width="1520" height="150">
+<ul>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/web.html">HOME</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/news/Slide-show.html">NEWS</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/nikh.html">EVENTS</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/charitra/dbog.html">HISTORY</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/super.html">SUPERSTARS</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/login.html" > LOG IN </a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/kiii/htmllogin.html">CONTACT</a></li>
+<li><a href="file:///E:/PANKAJ%20Docs/html%20project/FEEDBACK/user's_use.html">FEEDBACK</a></li>
+
+</ul>
+
+
+<div id="container">
+<img src="pic1.jpg" id="img"/>
+<div id="left_holder"> <img onclick="slide(-1)" class="left" src="th (2).jpg"/> </div>
+<div id="right_holder"> <img onclick="slide(1)" class="right" src="th (3).jpg"/></div>
+
+</div>
+
+<div id="container_2" >
+<a href="https://www.youtube.com/user/WWEFanNation"> <button style="position:relative ;color: white;background-color: #f44336;border: none;height:50px;width:300px;top:85px;left:1300px"> MORE VIDEOS </button> </a>
+  <h2 style="color:white;  padding: 20px; background-color: #333 ;border-style:solid; border-color:white"> Trending <br> WWE Videos
+   </h2>
+  <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/0Y_b1Z8rTz0" frameborder="0" ></iframe>
+  <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/cxlQjM_s1YE" frameborder="0" ></iframe>
+  <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/CYDYdzz8igM" frameborder="0" ></iframe>
+  <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/E3kmejsv_Ww" frameborder="0" ></iframe>
+</div>
+
+<div id="container_4">
+<a href="file:///E:/PANKAJ%20Docs/html%20project/nikh.html"> <button style="position:relative ;color: white;background-color: #f44336;border: none;height:50px;width:300px;top:85px;left:1300px"> MORE AMAZING EVENTS </button> </a>
+  <h2 style="color:white;  padding: 20px; background-color: #333; border-style:solid; border-color:white"> WWE <br> EVENTS <br>
+   </h2>
+
+   <img src="mitb-2017-dg.jpg" style="padding:60px" width="420" height="300" >
+   <img src="SummerSlam-20131.jpg" style="padding:60px" width="420" height="300" >
+   <img src="Royal_Rumble_(2017)_-_Logo.png" style="padding:60px" width="420" height="250" >
+
+
+   </div>
+<div>
+  <h1  align="center" style="color :white;padding: 20px;background-color: #333; border-style:solid; border-color:white"> WWE PRESENTS ALL NEW EVENT<br> FOR ITS REAL FANS</h1>
+
+  <img src="jake_the_snake_roberts_wwe2k14_promo_shoot_by_mr_igfx-d6snaen.jpg" width="500" height="600">
+  <img src="782552_dangerous-black-snake-wallpapers-hd-wallpapers_1366x768_h.jpg" width="600" height="600">
+    <img src="graphics-snake-women.jpg.jpg" width="500" height="600"><br>
+  <a href="file:///E:/PANKAJ%20Docs/snake%20game/snake.html"> <button style="position:relative ;color: white;background-color:black;border-style:dotted;border-color: white;none;height:50px;width:300px;top:40px;left:700px"> PLAY NOW <br> AND WIN EXITIING PRIZES </button> </a>
+
+</div>
+
+
+<div id="container_3">
+<a href="file:///E:/PANKAJ%20Docs/html%20project/news/Slide-show.html"> <button style="position:relative ;color: white;background-color: #f44336;border: none;height:50px;width:300px;top:85px;left:1300px"> MORE NEWS </button> </a>
+  <h2 style="color:white;  padding: 20px; background-color: #333; border-style:solid; border-color:white"> LATEST <br> WWE NEWS
+   </h2>
+   <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/6kz2AfQQuVM" frameborder="0" ></iframe>
+   <iframe  id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/gPIPQWyCwfE" frameborder="0" ></iframe>
+   <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/vKooEMf1AJI" frameborder="0" ></iframe>
+   <iframe id="vid" style="padding:60px" width="250" height="250" src="https://www.youtube.com/embed/9m-qVioEJuk" frameborder="0" ></iframe>
+ </div>
+
+
+
+
+<div id="endpart" style="background-color:#333 ; border-top:solid;border-bottom:solid; border-color:white" >
+<div style="text-align:center">
+<p style="color:white"> FOLLOW US </p>
+<a href="https://www.facebook.com/wwe/"><i class="fa fa-facebook-square" style="color:white ;padding:10px; font-size:50px "> </i></a>
+<a href="https://twitter.com/WWE?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <i class="fa fa-twitter-square" style="color: white ;padding:10px; font-size:50px"> </i></a>
+<a href="https://www.youtube.com/channel/UCJ5v_MCY6GNUBTO8-D3XoAg" > <i class="fa fa-youtube-play" style="color: white ;padding:10px; font-size:50px"> </i></a>
+<a href="https://www.instagram.com/wwe/?hl=en" > <i class="fa fa-instagram" style="color: white ; padding:10px;font-size:50px"> </i></a>
+<a href="https://in.pinterest.com/WWE/" > <i class="fa fa-pinterest" style="color: white ;padding:10px; font-size:50px"> </i></a><br>
+<a href="file:///E:/PANKAJ%20Docs/html%20project/login.html"><p id="ppaa">SIGN IN</p>
+<a href="file:///E:/PANKAJ%20Docs/html%20project/dev.html"><p id="ppaa">DEVELOPER INFO</p>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
